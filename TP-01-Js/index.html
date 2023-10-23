@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr_CA">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Librairie en ligne</title>
+    <link rel="stylesheet" type="text/css" href="assets/styles/styles.css">
+    <script type="module" src="assets/scripts/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Librairie en ligne</h1>
+        <button id="panier-button" data-js-panier>
+            <img src="assets/img/panier.png" id="panier-button" alt="panier" data-js-panier>
+            <div class="pastille" data-js-panier>
+                <div class="compteur">0</div>
+            </div>
+        </button>
+    </header>
+
+    <main>
+
+        <section id="filtres" data-js="filters-section">
+            <div id="categorie-filter" data-js-filtres>
+                <ul class="filter-list" data-js-filtres>
+                    <li class="filtre">TOUS</li>
+                    <li class="filtre">Nouveautés</li>
+                    <li class="filtre">Littérature</li>
+                    <li class="filtre">Art de vivre</li>
+                    <li class="filtre">BD, Jeunesse, Humour</li>
+                    <li class="filtre">Culture et société</li>
+                    <li class="filtre">Loisirs, Tourisme, Nature</li>
+                    <li class="filtre">Savoir et science</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="inventaire" data-js-inventaire>
+            <!-- Les tuiles des livres seront ici -->
+        </section>
+        <div id="modal-livre" data-js-modal data-js-etat="fermer" data-js-type="livre">
+            <div class="modal-contenu" data-type="livre" data-js-modal data-js-type="livre">
+            </div>
+        </div>
+
+
+        <div id="modal-panier" data-js-modal data-js-etat="fermer" data-js-type="panier">
+            <span class="fermer-icone" data-js-fermer-icone data-js-type="panier">&times;</span>
+            <div class="modal-arrow"></div> <!-- Flèche du modal -->
+            <div class="modal-contenu" data-js-modal data-js-type="panier">
+                <!-- Le contenu du panier sera ici -->
+            </div>
+        </div>
+        <!-- Le contenu du panier sera ici -->
+        </div>
+    </main>
+    <footer>
+        <p data-js="footer-text">2023 &copy; Votre librairie en ligne</p>
+    </footer>
+
+</body>
+
+</html>
